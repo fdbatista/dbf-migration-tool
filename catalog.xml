@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://ws.cdyne.com/NotifyWS/phonenotify.asmx" uri="xml-resources/web-service-references/phonenotify/wsdl/ws.cdyne.com/NotifyWS/phonenotify.asmx"/>
+    <system systemId="http://ws.cdyne.com/NotifyWS/phonenotify.asmx?wsdl" uri="xml-resources/web-service-references/phonenotify_1/wsdl/ws.cdyne.com/NotifyWS/phonenotify.asmx.wsdl"/>
+    <system systemId="file:/C:/Users/felix.batista/AppData/Roaming/NetBeans/8.2/config/WebServices/EmailVerify5/catalog/wsparam.strikeiron.com/EmailVerify5.wsdl" uri="xml-resources/web-service-references/EmailVerify5/wsdl/EmailVerify5.wsdl"/>
+    <system systemId="http://fx.currencysystem.com/webservices/CurrencyServer4.asmx?WSDL" uri="xml-resources/web-service-references/CurrencyServer4/wsdl/fx.currencysystem.com/webservices/CurrencyServer4.asmx.wsdl"/>
+    <system systemId="http://localhost/ServicioWebTB/ServicioWebTB.asmx?WSDL" uri="xml-resources/web-service-references/ServicioWebTB/wsdl/localhost/ServicioWebTB/ServicioWebTB.asmx.wsdl"/>
+</catalog>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="429.0" prefWidth="418.0" styleClass="background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.frmMainController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" fillHeight="false" layoutX="41.0" prefHeight="50.0" prefWidth="337.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="365.0" text="ConversorDBF 1.0" textFill="#c2d70a">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+            </Label>
+            <VBox alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="30.0">
+               <children>
+                  <ImageView fx:id="btnMinimApp" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#minimize" onMouseEntered="#btnMinimMouseEntered" onMouseExited="#btnMinimMouseExited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/minimize.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="37.0">
+               <children>
+                  <ImageView fx:id="btnCloseApp" accessibleHelp="Salir" accessibleRoleDescription="Salir" accessibleText="Salir" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#close" onMouseEntered="#btnCloseMouseEntered" onMouseExited="#btnCloseMouseExited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/close.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="41.0" layoutY="47.0" prefHeight="287.0" prefWidth="338.0">
+         <children>
+            <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="16.0" prefWidth="338.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="5.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox prefHeight="24.0" prefWidth="338.0">
+               <children>
+                  <VBox prefHeight="40.0" prefWidth="212.0">
+                     <children>
+                        <Label fx:id="lblSelect" prefHeight="17.0" prefWidth="266.0" styleClass="lblSelect" text="Seleccione un fichero de base de datos:" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin></Label>
+                        <Label fx:id="lblFileName" prefHeight="17.0" prefWidth="337.0" styleClass="lblFileName" textFill="#cbe12afc" underline="true">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnOpenFile" alignment="CENTER_RIGHT" contentDisplay="CENTER" onAction="#selectFile" prefHeight="18.0" prefWidth="114.0" styleClass="btnOpenFile" text="Examinar" textAlignment="RIGHT">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <TextArea fx:id="txtTableDescription" editable="false" opacity="0.7" prefHeight="144.0" prefWidth="361.0" styleClass="txtTableDescription">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></TextArea>
+            <CheckBox fx:id="chkDropTable" mnemonicParsing="false" styleClass="chkDropTable" text="Generar sentencia para realizar una instalación limpia" textFill="#f7ff59">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </CheckBox>
+            <HBox prefHeight="34.0" prefWidth="404.0">
+               <children>
+                  <Label fx:id="lblDestinationDB" styleClass="lblDestinationDB" text="Gestor de bases de datos de destino:" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="cmbDestinationDB" prefHeight="25.0" prefWidth="130.0" styleClass="cmbDestinationDB">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="41.0" layoutY="334.0" prefHeight="60.0" prefWidth="338.0">
+         <children>
+            <Button fx:id="btnAccept" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#convertDBF" prefHeight="32.0" prefWidth="154.0" text="Realizar conversión" textAlignment="RIGHT">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></Button>
+            <Label fx:id="lblError" opacity="0.0" prefHeight="17.0" prefWidth="406.0">
+               <textFill>
+                  <RadialGradient centerX="0.5222222222222223" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#fcb8b8" />
+                        <Stop color="#f86565d6" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

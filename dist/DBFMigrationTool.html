@@ -1,0 +1,47 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'DBFMigrationTool.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iREJGTWlncmF0aW9uVG9vbC5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5EQkZNaWdyYXRpb25Ub29sPC90aXRsZT4NCiAgICA8dmVuZG9yPkZEPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPkbpbGl4IERhbmllbCBCYXRpc3RhCkRBVFlTIExhcyBUdW5hcyAyMDE3PC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBqYXZhLXZtLWFyZ3M9Ii1EaHR0cC5wcm94eUhvc3Q9MTI3LjAuMC4xIC1EaHR0cC5wcm94eVBvcnQ9MzEyOCAtRGh0dHAubm9uUHJveHlIb3N0cz1sb2NhbGhvc3R8MTI3LjAuMC4xfGZlbGl4Yi1wY3xmZWxpeGItcGMuZGF0eXMuY3UgLURodHRwcy5wcm94eUhvc3Q9MTI3LjAuMC4xIC1EaHR0cHMucHJveHlQb3J0PTMxMjggLURodHRwcy5ub25Qcm94eUhvc3RzPWxvY2FsaG9zdHwxMjcuMC4wLjF8ZmVsaXhiLXBjfGZlbGl4Yi1wYy5kYXR5cy5jdSAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJEQkZNaWdyYXRpb25Ub29sLmphciIgc2l6ZT0iODcwMTUiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxjb21tb25zLWNvZGVjLTEuMi5qYXIiIHNpemU9IjI5MDI5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcanNvbi0yMDE2MDgxMC5qYXIiIHNpemU9IjU0NDk1IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9IkRCRk1pZ3JhdGlvblRvb2wiID4NCiAgICA8cGFyYW0gbmFtZT0icmVxdWlyZWRGWFZlcnNpb24iIHZhbHVlPSI4LjArIi8+DQogIDwvYXBwbGV0LWRlc2M+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJkYmZtaWdyYXRpb250b29sLkRCRk1pZ3JhdGlvblRvb2wiICBuYW1lPSJEQkZNaWdyYXRpb25Ub29sIiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=localhost|127.0.0.1|felixb-pc|felixb-pc.datys.cu -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=localhost|127.0.0.1|felixb-pc|felixb-pc.datys.cu '
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbeddbfmigrationtool() {
+        dtjava.embed(
+            {
+                id : 'dbfmigrationtool',
+                url : 'DBFMigrationTool.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iREJGTWlncmF0aW9uVG9vbC5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5EQkZNaWdyYXRpb25Ub29sPC90aXRsZT4NCiAgICA8dmVuZG9yPkZEPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPkbpbGl4IERhbmllbCBCYXRpc3RhCkRBVFlTIExhcyBUdW5hcyAyMDE3PC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBqYXZhLXZtLWFyZ3M9Ii1EaHR0cC5wcm94eUhvc3Q9MTI3LjAuMC4xIC1EaHR0cC5wcm94eVBvcnQ9MzEyOCAtRGh0dHAubm9uUHJveHlIb3N0cz1sb2NhbGhvc3R8MTI3LjAuMC4xfGZlbGl4Yi1wY3xmZWxpeGItcGMuZGF0eXMuY3UgLURodHRwcy5wcm94eUhvc3Q9MTI3LjAuMC4xIC1EaHR0cHMucHJveHlQb3J0PTMxMjggLURodHRwcy5ub25Qcm94eUhvc3RzPWxvY2FsaG9zdHwxMjcuMC4wLjF8ZmVsaXhiLXBjfGZlbGl4Yi1wYy5kYXR5cy5jdSAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJEQkZNaWdyYXRpb25Ub29sLmphciIgc2l6ZT0iODcwMTUiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxjb21tb25zLWNvZGVjLTEuMi5qYXIiIHNpemU9IjI5MDI5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcanNvbi0yMDE2MDgxMC5qYXIiIHNpemU9IjU0NDk1IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9IkRCRk1pZ3JhdGlvblRvb2wiID4NCiAgICA8cGFyYW0gbmFtZT0icmVxdWlyZWRGWFZlcnNpb24iIHZhbHVlPSI4LjArIi8+DQogIDwvYXBwbGV0LWRlc2M+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJkYmZtaWdyYXRpb250b29sLkRCRk1pZ3JhdGlvblRvb2wiICBuYW1lPSJEQkZNaWdyYXRpb25Ub29sIiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=localhost|127.0.0.1|felixb-pc|felixb-pc.datys.cu -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=localhost|127.0.0.1|felixb-pc|felixb-pc.datys.cu '
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbeddbfmigrationtool);
+</script>
+
+</head><body>
+<h2>Test page for <b>DBFMigrationTool</b></h2>
+  <b>Webstart:</b> <a href='DBFMigrationTool.jnlp' onclick="return launchApplication('DBFMigrationTool.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

@@ -1,0 +1,66 @@
+.background {
+    -fx-background-image: url("/img/background.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+}
+
+#btnCloseApp, #btnMinimApp {
+    -fx-cursor: hand;
+}
+
+.button {
+    -fx-background-size: 24px;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 5;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 1px;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-background-position: left center;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+}
+
+.button:hover                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     {
+    
+}
+
+.textbox {
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#btnAccept {
+    -fx-background-image: url("/img/convert.png");
+    -fx-background-size: 20px;
+}
+
+#txtTableDescription {
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}
+
+#btnOpenFile {
+    -fx-background-image: url("/img/folder_open.png");
+}
+
+#chkDropTable {
+    -fx-cursor: hand;
+}
+
+#cmbDestinationDB {
+    -fx-cursor: hand;
+}
+
+#lblFileName {
+    -fx-cursor: hand;
+}
